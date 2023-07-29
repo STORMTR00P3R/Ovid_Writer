@@ -3,6 +3,7 @@
 html {
   height: 100%;
   width: 100%;
+  background-color: hsla(8.28,67.44%,91.57%,1);
 }
 
 h1 {
@@ -18,6 +19,7 @@ p {
 
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 button {
@@ -26,7 +28,18 @@ button {
     background-color: black;
     color: white;
     border: none;
-    font-style: bold;
+    font-weight: bold;
+}
+
+input {
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+}
+
+input::file-selector-button {
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 button:hover {
@@ -46,7 +59,7 @@ textarea::-webkit-scrollbar-thumb {
 textarea, #document_body {
     font-family: 'EB Garamond', serif;
     display: block;
-    width: 80%;
+    width: 75%;
     background: none;
     margin-right: auto;
     resize: none;
@@ -64,11 +77,12 @@ textarea:focus {
 
 textarea#document_title {
     margin-top: 5%;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    color: red;
 }
 
 div#document_body {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     min-height: 55vh;
     border: 1px solid #eee;
 }
@@ -81,12 +95,14 @@ div#document_body:focus {
 footer {
     background-color: black;
     color: white;
-    height: 3vh;
+    height: 4vh;
     position: absolute;
     width: 100vw;
     bottom: 0;
+    left: 0;
     padding-right: 25px;
     font-family: 'EB Garamond', serif;
+    overflow-y: hidden;
 }
 
 table {
@@ -108,11 +124,12 @@ th {
 }
 
 .ql-editor::-webkit-scrollbar {
-    width: 0.25em;
+    width: 0.2em;
   }
    
 .ql-editor::-webkit-scrollbar-thumb {
-    background-color: #ededed;
-    outline: 1px solid #ffffff;
+    background-color: #a7a7a78e;
+    /* background-color: rgba(255, 0, 0, 0.305); */
+    /* outline: 1px solid #ffffff; */
     border-radius: 10px;
   }
